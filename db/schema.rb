@@ -22,8 +22,9 @@ ActiveRecord::Schema.define(version: 2020_08_11_015743) do
 
   create_table "posts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.text "content"
-    t.datetime "created_at2020-01-01", precision: 6, null: false
-    t.datetime "updated_at2020-01-01", precision: 6, null: false
+    t.boolean "checked"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
 end
